@@ -75,4 +75,16 @@ IBM MainFrame Computer operator,  programming and scripting , networks and commu
 <2006-2017> - Training days in the following topics: Java 8, Java Android, SQL advanced, AngularJS 1, Angular 2.
 
 
+[Workspaces, Development and Build Tools, Programming Languages, frameworks]:
+Oracle Version 11g: Sql, Form-Builder, Report-Builder
+ Java SE, SWT, JFace, C#, C++, C             
+ SQL (Oracle, DB2). XML, XSD, JSON             
+ MQE, Tomcat, WebSphere             
+ HTML5, CSS3, ASP, JavaScript, Angular 1.x, J2EE (Java Web Services), JAX-RS, GSON, Python             
+ Grunt, Bower, NPM, Yeoman, Gulp, GIT, ClearCase             
+ Eclipse, RAD, Visual Studio, VS Code, Brackets   
 
+
+[Languages]
+Hebrew - mother tongue
+English - high level
