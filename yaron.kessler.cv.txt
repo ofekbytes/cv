@@ -29,18 +29,50 @@ Programmer in a banking / financial company - Build END2END style programs such 
 
 
 <2004 - 2014> - ISRACARD Company.
-JAVA and ORACLE Programmer in the Information Systems Division, Isracard.
+- JAVA and ORACLE Programmer in the Information Systems Division, Isracard.
+
 - As part of a project to rewrite all the "business" system and adapt it to the Java world
   I learned and developed the client and server side of the system.
   Development and maintenance of a client side and server side of the corporate "business" system -
   A system that constitutes one of the organization's main activity channels,
   And serves the field representatives (salespeople) in all activities required for the recruitment and retention of businesses and customers.
+
 - As part of the job -
 ** Development and maintenance of all system screens and business logic behind them through JAVA GWT/SWT/JFace frameworks.
-**
-**
-** 
+** Development and maintenance of dedicated UI components (Dynamic document view, identification scan screen ..)
+** Development and support interfaces for enterprise and external services (financial calculators, digital signature ..)
+** Development and maintenance of Web services on a Tomcat server running from the client layer Through SOAP-RPC.
+** IBM Sync Product Management (DB2 Everyplace) -
+   The product synchronizes data between the positions of the representatives and the database of the organization.
+   Working with the product I managed the distribution of versions, data permissions, user management and so on.
 
+- Oracle Development - 
+* Oracle Development and maintenance of the system screens and the business logic behind them through the Oracle Form-Builder.
+* Oracle Development - Development of programs / queries (procedures / functions), users, permissions, and reports using PL SQL.
+* Oracle Development - Development of reports using Oracle reports
+
+- Microsoft servers administrator maintenance: active directory, DataBases, user.
+
+<2001 - 2004> - ISRACARD Company
+System Administrator -  working on Servers, networks and communications, at Isracard
+
+<1997-2001> - IBM / IGS
+* System Administrator and Developer under Unix/Linux operating system.
+* System Administrator - user/s and server/s maintenance.
+* Developer - programming for end user and for maintenance use.
+
+<1992-1995> - Military service
+IBM MainFrame Computer operator,  programming and scripting , networks and communications for the end user.
+
+
+[education]:
+
+<2015> - JavaScript course, Angular1.x course.
+<2007-2008> - Comprehensive course in JAVA and J2EE.
+* As part of the studies, a multi-stage project was implemented that simulates the activity of a banking system through:
+  Java SE, JDBC, SWING, Servlets, JSP, EJB3.0.
+<2004-2005> - Comprehensive course at RHCE Linux (RHCE - Red Hat Certified Engineer)
+<2006-2017> - Training days in the following topics: Java 8, Java Android, SQL advanced, AngularJS 1, Angular 2.
 
 
 
