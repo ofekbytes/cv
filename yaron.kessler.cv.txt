@@ -1,0 +1,46 @@
+
+----[YARON KESSLER CV (RESUME)]----
+
+Address: ISRAEL, HOLON
+Email: yaron.kessler41@gmail.com
+
+
+[Essence]: 
+Knowledge, interest and experience in developing Full Stack, inquisitive, 
+task-oriented and with a high level of self-learning - technological and organizational.
+
+
+[Work Experience]:
+
+<2017-2018>
+Programmer in a banking / financial company - Build END2END style programs such as:
+-- java client - server 
+-- web-client – spring-boots server-side (tomcat)
+
+<2015-2017> - ISRACARD Company.
+- Full Stack Programmer in the Information Systems Division, Isracard.
+- As part of a project to rewrite all the "business" system and adapt it to the WEB world,
+  I learned and developed the client and server side of the system.
+- As part of the job -
+  I developed the various UI components and screens on AngularJS.
+  As part of the development, we have created a system that enables the generic construction of screens 
+  using configuration files Updated by the customer.
+  Create Java Web Services in the REST API On the WebSphere server.
+
+
+<2004 - 2014> - ISRACARD Company.
+JAVA and ORACLE Programmer in the Information Systems Division, Isracard.
+- As part of a project to rewrite all the "business" system and adapt it to the Java world
+  I learned and developed the client and server side of the system.
+  Development and maintenance of a client side and server side of the corporate "business" system -
+  A system that constitutes one of the organization's main activity channels,
+  And serves the field representatives (salespeople) in all activities required for the recruitment and retention of businesses and customers.
+- As part of the job -
+** Development and maintenance of all system screens and business logic behind them through JAVA GWT/SWT/JFace frameworks.
+**
+**
+** 
+
+
+
+
