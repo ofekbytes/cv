@@ -1,0 +1,53 @@
+.
+./////////////////
++---------------+/
+|               |/
+|  vs code      |/
+|  information  |/
+|               |/
++---------------+/
+.
+.
+[plugins / extensions]
+.
+Numbered Bookmarks - <Alessandro Fragnani> ..MIT License..
+Angular 7 Snippets - TypeScript, Html, Angular Material, ngRx, RxJS & Flex Layout - <Mikael Morlund> ..MIT License..
+Angular v6 Snippets - <John Papa> ..MIT License..
+Paste JSON as Code - <quicktype> ..Apache License..
+vscode-spotify - <shyykoserhiy>  ..MIT License.. 
+
+
+
+
+.
+.
+[keyboard hot-keys]
+.
+ctrl+<k> ==> key bind search (????????)
+
+- ctrl+<p> ==> search files
+-- serach inside "serach files" ==> @ + "serach method/command/function" 
+
+ctrl+<`> ==> show terminal/console window.
+ctrl+space-bar ==> intellisense - code keyword auto complite.
+f12 - go to definition
+atl+f12 -  peek definition
+
+-!- (Snippets - automatic command complite)
+
+- Paste JSON as Code
+-- create a new file "test.ts"
+-- ctrl+<p> + enter ">" ==> then enter ==> ">Paste JSON as Code"
+--- example: 
+serach api --> example: twitter api: --> https://developer.twitter.com/ 
+
+test.1.0.txt  //before change//
+test.1.ts     //after change//
+
+
+-- zen mode - pure developing - ctrl+<k>+<z> (????????)
+
+
+- more links about the subject -
+-- https://www.youtube.com/watch?v=u21W_tfPVrY
+-- 
