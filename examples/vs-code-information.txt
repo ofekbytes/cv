@@ -17,6 +17,11 @@
 5) vscode-spotify - <shyykoserhiy>  ..MIT License.. 
 6) Debugger for Chrome - <Microsoft>  ..MIT License..
 7) GitLens — Git supercharged - <Eric Amodio> ..MIT License..
+8) VS Live Share - <Microsoft>  ..MICROSOFT PRE-RELEASE SOFTWARE LICENSE TERMS..
+9) 
+
+2018
+*) Settings Sync - <Shan Khan>  ..MIT License..
 
 
 
