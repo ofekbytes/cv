@@ -1,33 +1,36 @@
 body {
-  padding-left: 2%;
-  padding: 2%;
+  /* padding-left: 2%; */
+  padding: 4%;
   background-color: gray; /* #3d3d3d;*/
   color: white;
   font-family: Open Sans;
   text-align: center;
 }
 
+#loginContainer
+{
+  border: none;
+}
+
 .loginLogo
 {
   font-size: 44px;
-  color: red;
+  color: white;
 }
 
 
-.container {
-  margin: 3%; /*100px auto;*/
-  width: 25%;
-  padding: 40px 2px;
-  /*background-color: gray; */ /* hsla(177, 47%, 33%, 0.8); */
-}
-
-.textbox 
+#userNameIcon
 {
-  /* margin: auto; */
-  /* width: 80%; */
-  overflow: hidden;
-  /*border-bottom: 1px solid white;*/
-  font-size: 30px;
+  font-size:33px;
+  color: blue;
+  /* padding-top:2%; */
+}
+
+#passwordIcon
+{
+  font-size:33px;
+  color: blue;
+  /* padding-top:2%; */
 }
 
 
@@ -42,7 +45,7 @@ body {
   /* float: left; */
    margin: 5px; 
   padding: 2%;
-  /* width: 60%; */
+  width: 80%;
 }
 
 
@@ -55,11 +58,12 @@ body {
 
 .boton 
 {
-  margin-top: 30px;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding: 2%;
+  /* margin-top: 10px; */
+  /* padding-top: 10px; */
+  /* padding-bottom: 10px; */
   /*cursor: pointer;*/
-  width: 60%;
+  width: 80%;
   /** background: none; **/
   /*** background-color: #f9db4e; **/
   /** border: none;**/

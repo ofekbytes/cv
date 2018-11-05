@@ -13,9 +13,10 @@ task-oriented and with a high level of self-learning - technological and organiz
 [Work Experience]:
 
 <2017-2018>
-Programmer in a banking / financial company - Build END2END style programs such as:
+Programmer in a banking / financial company - Build END-TO-END style programs such as:
 -- java client - server 
 -- web-client – spring-boots server-side (tomcat)
+-- 
 
 <2015-2017> - ISRACARD Company.
 - Full Stack Programmer in the Information Systems Division, Isracard.
