@@ -18,6 +18,14 @@ Programmer in a banking / financial company - Build END-TO-END style programs su
 -- web-client – spring-boots server-side (tomcat)
 -- 
 
+-----[test]--------------------------------------------------------------------------------------------
+Programmer in a banking / financial company - Build END-TO-END style programs such as:
+-- java client-server (java, swing/awt, jdbc, ms-sql, json).
+-- web-client – html, css, bootstrap, javascript,  jquery, api (data
+-- web-Server - Java spring-boots and compile to war files and deploy it to apache tomcat server.
+-------------------------------------------------------------------------------------------------------
+
+
 <2015-2017> - ISRACARD Company.
 - Full Stack Programmer in the Information Systems Division, Isracard.
 - As part of a project to rewrite all the "business" system and adapt it to the WEB world,
