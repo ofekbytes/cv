@@ -12,18 +12,11 @@ task-oriented and with a high level of self-learning - technological and organiz
 
 [Work Experience]:
 
-<2017-2018>
-Programmer in a banking / financial company - Build END-TO-END style programs such as:
--- java client - server 
--- web-client – spring-boots server-side (tomcat)
--- 
-
------[test]--------------------------------------------------------------------------------------------
-Programmer in a banking / financial company - Build END-TO-END style programs such as:
+<2017-2018> - banking / financial company
+- Programmer in a banking / financial company - Build END-TO-END style programs such as:
 -- java client-server (java, swing/awt, jdbc, ms-sql, json).
--- web-client – html, css, bootstrap, javascript,  jquery, api (data
+-- web-client – creating aResponsive web pages by using html, css, bootstrap, javascript,  jquery, 
 -- web-Server - Java spring-boots and compile to war files and deploy it to apache tomcat server.
--------------------------------------------------------------------------------------------------------
 
 
 <2015-2017> - ISRACARD Company.
