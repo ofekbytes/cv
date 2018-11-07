@@ -10,13 +10,16 @@ Knowledge, interest and experience in developing Full Stack, inquisitive,
 task-oriented and with a high level of self-learning - technological and organizational.
 
 
+
 [Work Experience]:
+
 
 <2017-2018> - banking / financial company
 - Programmer in a banking / financial company - Build END-TO-END style programs such as:
--- java client-server (java, swing/awt, jdbc, ms-sql, json).
--- web-client – creating aResponsive web pages by using html, css, bootstrap, javascript,  jquery, 
--- web-Server - Java spring-boots and compile to war files and deploy it to apache tomcat server.
+-- java client-server (java, swing/awt, jdbc, ms-sql, json ...).
+-- web-client – creating a Responsive web pages using html, css, bootstrap, javascript,  jquery, (within ms-iis server)
+-- web-Server - developing in Java spring-boots and compiling code to "war" file.
+                the "war" file will be deployed in apache tomcat server.
 
 
 <2015-2017> - ISRACARD Company.
