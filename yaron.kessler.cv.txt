@@ -94,3 +94,6 @@ Eclipse, RAD, Visual Studio, VS Code, Brackets, Atom
 [Languages]
 Hebrew - mother tongue
 English - high level
+
+
+resume/cv updated : 08/11/2018
