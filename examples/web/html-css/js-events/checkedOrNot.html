@@ -1,0 +1,87 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>checkbox :: checked Or Not</title>
+
+    <!-- //js// -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="js-events.js"></script>
+    <!-- <script src="./js-events.js"></script> -->
+
+</head>
+
+
+<body>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div><h1>js events</h1></div>
+        </div>
+
+
+            <table>
+                <tr>
+                    <td class="categories" id="111">option-1</td>
+                    <td class="category_enabled" style="float: right;">
+                    <input type="checkbox" />
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td class="categories" id="222">option-2</td>
+                    <td class="category_enabled" style="float: right;">
+                    <input type="checkbox" checked />
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td class="categories" id="333" value="3">option-3</td>
+                    <td class="category_enabled" style="float: right;">
+                    <input type="checkbox" />
+                    </td>
+                </tr>
+            </table>
+
+        </div>
+
+        <div class="container-fluid">
+            <div class="list-group-item">
+                    <input id="submit"  type="button" name="" value="check">
+            </div>
+        </div>
+
+    </div>
+
+ 
+
+    <script>
+
+    //  document.getElementById('submit').addEventListener('click', fnsubmit);
+
+     $(document).ready(function() 
+     {
+        document.getElementById('submit').addEventListener('click', fnSubmit);
+     });
+
+
+    function fnSubmit()
+    {
+        console.log("fnSubmit()");
+        $('table [type="checkbox"]').each(function(i, chk) {
+        if (chk.checked) 
+        {
+            
+            console.log("Checked::: ", i, chk);
+        }
+        });       
+    }
+
+    </script>
+
+</body>
+</html>

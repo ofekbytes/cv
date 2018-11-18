@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+ </head>
+<body>
+    <p>Check of uncheck the below checkboxes and 
+        click the button to check which checkbox is checked.</p>
+
+    <!-- <input type="checkbox" class="chk" value="chk1" id="111" /> Ch1eck 1 <br />
+    <input type="checkbox" class="chk" value="chk2" id="222" checked /> Che2ck 2 <br />
+    <input type="checkbox" class="chk" value="chk3" id="333" checked  /> Che3ck 3 -->
+
+    <p><input type="button" id="bt" value="Click it" /></p>
+</body>
+
+<script>
+    $(document).ready(function () {
+        $('#bt').click(function () {
+            $('.chk').each(function () {
+                var id = $(this).attr('id');
+                if ($('#' + id).is(':checked')) {
+                    console.log($('#' + id).val() + ' is checked' +  " --- " + id);
+                }
+            });
+        });
+    });
+</script>
+</html>
