@@ -12,7 +12,7 @@
 .
 1) Numbered Bookmarks - <Alessandro Fragnani> ..MIT License..
 2) Angular 7 Snippets - TypeScript, Html, Angular Material, ngRx, RxJS & Flex Layout - <Mikael Morlund> ..MIT License..
-3) Angular v6 Snippets - <John Papa> ..MIT License..
+3) Angular v7 Snippets - <John Papa> ..MIT License..
 4) Paste JSON as Code - <quicktype> ..Apache License..
 5) vscode-spotify - <shyykoserhiy>  ..MIT License.. 
 6) Debugger for Chrome - <Microsoft>  ..MIT License..
