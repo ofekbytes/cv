@@ -1,0 +1,17 @@
+
+<<<<< JAVA >>>>>
+
+[java-interview-questions]
+
+https://www.javatpoint.com/corejava-interview-questions
+
+https://www.edureka.co/blog/interview-questions/java-interview-questions/
+
+
+
+[java-questions]
+
+<JDBC - Statements, PreparedStatement and CallableStatement>
+https://www.tutorialspoint.com/jdbc/jdbc-statements.htm
+
+

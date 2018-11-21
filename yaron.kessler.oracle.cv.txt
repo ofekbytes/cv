@@ -6,29 +6,19 @@ Email: yaron.kessler41@gmail.com
 
 
 [Essence]: 
-Knowledge, interest and experience in developing Full Stack, inquisitive, 
+Knowledge, interest and experience in developing ORACLE environment, inquisitive,
 task-oriented and with a high level of self-learning - technological and organizational.
 
 
 [Work Experience]:
 
-
 <2017-2018> - banking / financial company
-- Programmer in a banking / financial company - Build END-TO-END style programs such as:
--- java client-server (java, swing/awt, jdbc, ms-sql, json ...).
--- web-client – creating a Responsive web pages using html, css, bootstrap, javascript,  jquery, (within ms-iis server)
--- web-Server - developing in Java spring-boots and compiling code to "war" file.
-                the "war" file will be deployed in apache tomcat server.
+- Programmer in a banking / financial company - Build END-TO-END style programming.
+-- java client-server with a dataBases.
 
 
 <2004 - 2017> - ISRACARD Company.
 - JAVA and ORACLE Programmer in the Information Systems Division, Isracard.
-
-- As part of a project to rewrite all the "business" system and adapt it to the Java world
-  I learned and developed the client and server side of the system.
-  Development and maintenance of a client side and server side of the corporate "business" system -
-  A system that constitutes one of the organization's main activity channels,
-  And serves the field representatives (salespeople) in all activities required for the recruitment and retention of businesses and customers.
 
 - Oracle Development - 
 * Oracle Development and maintenance of the system screens and the business logic behind them through the Oracle Form-Builder.
@@ -60,12 +50,8 @@ IBM MainFrame Computer operator,  programming and scripting , networks and commu
 
 [Workspaces, Development and Build Tools, Programming Languages, frameworks]:
 Oracle Version 11g: Sql, Form-Builder, Report-Builder
-Java: Java SE, AWT, SWING, GWT, SWT, JFace, SPRING BOOT
-Other Languages: C, C#, C++, visual studio 5/6,             
-SQL (Oracle, DB2). XML, XSD, JSON             
-MQE, Tomcat, WebSphere             
-WEB: HTML5, CSS3, "ASP", JavaScript, Angular 1.x, J2EE (Java Web Services), "JAX-RS", GSON, "Python"
-Grunt, Bower, NPM, Yeoman, Gulp, GIT, ClearCase             
+Java: Java SE, AWT, SWING, GWT, SWT, JFace, SPRING BOOT        
+SQL (Oracle, DB2). XML, XSD, JSON                    
 Eclipse, RAD, Visual Studio, VS Code, Brackets, Atom
 
 
@@ -74,4 +60,4 @@ Hebrew - mother tongue
 English - high level
 
 
-resume/cv updated : 08/11/2018
+resume/cv updated : 21/11/2018
