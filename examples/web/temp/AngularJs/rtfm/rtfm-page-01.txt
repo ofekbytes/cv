@@ -1,0 +1,18 @@
+
+
+SPA - Single Page Application
+
+[Topic]
+- spa
+- Controller
+- scope 
+- dependency injection
+- modules
+- $apply and $digest
+
+
+[spa]
+
+
+
+
