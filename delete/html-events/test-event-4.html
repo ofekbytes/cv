@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+<meta charset=utf-8 />
+<title>JS Bin</title>
+</head>
+<body>
+  <div id="barcode">
+    <input type="checkbox" id="111" value="1111" /> <label>1</label><br>
+    <input type="checkbox" id="112" value="2112" /> <label>0</label><br>
+    <input type="checkbox" id="222" value="3222" /> <label>1</label><br>
+    <input type="checkbox" id="223" value="4223" /> <label>0</label><br>
+    <input type="checkbox" id="224" value="5224" /> <label>1</label><br>
+    <input type="checkbox" id="331" value="6331" /> <label>0</label><br>  
+  </div>
+
+
+<script>
+
+    $(function () 
+    {
+        var stOutput = "";
+        var checkboxes = $('#barcode :checkbox');
+        checkboxes.click(function (e) 
+        {
+        console.log(" checkbox clicked");
+        console.log("id ==" + this.id + " type==" + this.type + " value==" + this.value);
+        
+        if (stOutput.length <= 0)
+        {
+            stOutput = stOutput + "'" + this.id + "'";
+        }
+        else
+        {
+            stOutput = stOutput + ",'" + this.id + "'";
+        }
+
+       // document.getElementById("'" + this.id + "'" ).innerHTML("disabled");
+
+        console.log(stOutput);
+
+        })
+    });
+
+    //     if(e.shiftKey) {
+    //     var index = checkboxes.index($(this)),
+    //         first = checkboxes.index(checkboxes.filter(':checked:first'));
+    //     checkboxes
+    //     .filter(':gt('+first+'):lt('+(index-1)+'):not(:checked)')
+    //     .prop('checked', true)
+        
+    //     }
+    // });
+
+</script>
+
+</body>
+</html>
