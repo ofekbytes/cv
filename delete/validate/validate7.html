@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Makes "parent" required only if age is below 13.</title>
+<link rel="stylesheet" href="https://jqueryvalidation.org/files/demo/site-demos.css">
+ 
+</head>
+<body>
+  <form id='targets' name='targets' action='http://www.innovativephp.com' method='post'  >
+
+    <input name="test_field" id="checkboxid" type="checkbox">I Agree to Terms of Use
+        <input type='submit' value='Save' />
+    </form>
+            
+<script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.min.js"></script>
+<script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/additional-methods.min.js"></script>
+<script>
+$(document).ready(function(){
+    $('#targets').submit(function() {
+        var error = 0;
+        if (!($('#checkboxid').is(':checked'))) {
+            error = 1
+            alert("Please Tick the Agree to Terms of Use");
+        }
+
+        if (error) {
+            return false;
+        } else {
+            return true;
+        }
+
+    });
+});
+</script>
+</body>
+</html>
