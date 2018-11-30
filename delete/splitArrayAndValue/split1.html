@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+<meta charset=utf-8 />
+<title>JS Bin</title>
+</head>
+<body>
+
+   
+<script>
+strInput="'TEST','ONE','TWO','TEST','ONE','THREE','THREE','FOUR','TWO'"
+var stResult = "";    
+stResult = TestSplit(strInput);
+
+console.info("stResult ==> " + stResult)
+
+//
+// TestSplit()
+//
+////////////////////////////////////////////////////////////////////////////////////////////
+function TestSplit(strInput)
+{
+    // str="'TEST','ONE','TWO','TEST','ONE','THREE','THREE','FOUR','TWO'"
+
+    temp=strInput.split(",")
+
+    newArr=[]
+
+    for(var i=0;i<temp.length;i++)
+    {
+        isIn=0
+
+        for(var j=0;j<newArr.length;j++)
+        {
+            if(temp[i]==newArr[j])
+            {
+                isIn=1
+            }
+        }
+
+        if(isIn==0)
+        {
+            newArr.push(temp[i])
+        }
+
+    }
+
+    console.log("Original string = "+temp+"\n\nNew string = "+newArr)
+    return newArr + "";
+}
+
+</script>
+
+</body>
+</html>
