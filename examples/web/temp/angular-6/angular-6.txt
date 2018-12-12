@@ -299,30 +299,58 @@ export class AppComponent {
 }
 ----------------------------------------------------------------------------------------------
 
+
 At the top, we have our imports. You will import other components here, along with service files. We'll do that a little later.
 
-The @Component decorator is an object with associated property / value pairs that defines important stuff associated with this component. For instance, you will see selector: 'app-root' - This provides this component with a unique identifier that is used in other areas of the app. You can also see templateUrl and styleUrls, which tells Angular where this component's HTML and CSS files are located. There are other properties that can be added here, such as animations, but we'll get to that later.
+The "@Component" decorator is an object with associated property "/" value pairs that defines 
+important stuff associated with this component. 
+For instance, you will see selector: 
+'app-root' - This provides this component with a unique identifier that is used in other areas of the app. 
 
-Finally, we have the logic section of the component file. This is where properties (we see that title was defined by the CLI), dependency injection and methods are defined.
+You can also see "templateUrl" and "styleUrls", 
+which tells Angular where this component's HTML and CSS files are located. 
+There are other properties that can be added here, 
+such as "animations", but we'll get to that later.
+
+Finally, we have the logic "section" of the component file. 
+This is where properties (we see that title was defined by the CLI), 
+dependency injection and methods are defined.
+
+----------------------------------------------------------------------------------------------
+"@Component" decorator - important stuff associated with this component.
+'app-root' - component with a unique identifier that is used in other areas of the app
+"templateUrl" - html path file
+"styleUrls" - scss path file
+"section" - properties
+"animations" - inside the properties
+----------------------------------------------------------------------------------------------
+
+- creating a components
 
 Now that you understand the very basics of a component, let's create a few of our own!
 
 In the console, run:
 
-> ng generate component sidebar
+$ ng generate component sidebar
+
 CREATE src/app/sidebar/sidebar.component.html (26 bytes)
 CREATE src/app/sidebar/sidebar.component.spec.ts (635 bytes)
 CREATE src/app/sidebar/sidebar.component.ts (274 bytes)
 CREATE src/app/sidebar/sidebar.component.scss (0 bytes)
 UPDATE src/app/app.module.ts (479 bytes)
-Here, we've told the CLI to generate a component with the name of sidebar. It outputs the 4 files it created, along with the app module file it updated!
 
-Let's generate a few more components. Run the following commands to generate 3 more components:
+- Here, we've told the CLI to generate a component with the name of "sidebar". 
+  It outputs the 4 files it created, along with the app module file it updated!
 
-> ng g c posts
-> ng g c users
-> ng g c details
-Now, you should have a total of 5 components, 4 of which we just created ourselves. Shortly, you'll see how all of these start to work with each other and in relation to the app.
+- Let's generate a few more components. 
+  Run the following commands to generate 3 more components:
+
+$ ng g c posts
+$ ng g c users
+$ ng g c details
+
+Now, you should have a total of 5 components, 4 of which we just created ourselves. 
+Shortly, you'll see how all of these start to work with each other and in relation to the app.
 
 Angular 6 Templating
 Let's say for instance that we want our particular app to have a sidebar with some icons. This sidebar will always be present in the app. The sidebar component is something we already generated with the CLI.
