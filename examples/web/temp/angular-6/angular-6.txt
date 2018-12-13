@@ -112,10 +112,16 @@ To check out all of the available commands and options, run ng at the command li
 
 $ cd ng6-proj 
 
-If you use Visual Studio Code, you can type code . to launch the code editor. Then, to serve the project to the browser, you run:
+If you use Visual Studio Code, you can type code . 
+to launch the code editor. Then, to serve the project to the browser, 
+you run:
+
 $ code .
 
+- run Project
+
 $ ng serve -o
+
 The -o flag tells the CLI to launch your browser with the project. 
 Now, you're able to watch your Angular 6 project as you code and it will automatically live reload. Awesome!
 
@@ -152,6 +158,8 @@ angular running commands (list in this file)
     "e2e": "ng e2e"
   },
 ..
+
+"@angular/compiler-cli": "^6.0.3",
 ..
 ----------------------------------------------------------------------------------------------
 
@@ -238,6 +246,7 @@ In short, TypeScript provides strong type checking on JavaScript.
 The app.module.ts file looks like this:
 
 ----[ /ng6-proj/src/app/app.module.ts ]------------------------------------------------------------------------------------------
+
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
@@ -333,18 +342,44 @@ In the console, run:
 
 $ ng generate component sidebar
 
-CREATE src/app/sidebar/sidebar.component.html (26 bytes)
-CREATE src/app/sidebar/sidebar.component.spec.ts (635 bytes)
-CREATE src/app/sidebar/sidebar.component.ts (274 bytes)
-CREATE src/app/sidebar/sidebar.component.scss (0 bytes)
-UPDATE src/app/app.module.ts (479 bytes)
+CREATE /ng6-proj/src/app/sidebar/sidebar.component.html (26 bytes)
+CREATE /ng6-proj/src/app/sidebar/sidebar.component.spec.ts (635 bytes)
+CREATE /ng6-proj/src/app/sidebar/sidebar.component.ts (274 bytes)
+CREATE /ng6-proj/src/app/sidebar/sidebar.component.scss (0 bytes)
+UPDATE /ng6-proj/src/app/app.module.ts (479 bytes)
 
 - Here, we've told the CLI to generate a component with the name of "sidebar". 
   It outputs the 4 files it created, along with the app module file it updated!
 
+
+----[ /ng6-proj/src/app/app.module.ts ]------------------------------------------------------------------------------------------
+
+import { BrowserModule } from '@angular/platform-browser';
+import { NgModule } from '@angular/core';
+
+import { AppRoutingModule } from './app-routing.module';
+import { AppComponent } from './app.component';
+import { SidebarComponent } from './sidebar/sidebar.component';
+
+@NgModule({
+  declarations: [
+    AppComponent,
+    SidebarComponent
+  ],
+  imports: [
+    BrowserModule,
+    AppRoutingModule
+  ],
+  providers: [],
+  bootstrap: [AppComponent]
+})
+export class AppModule { }
+----------------------------------------------------------------------------------------------
+
 - Let's generate a few more components. 
   Run the following commands to generate 3 more components:
 
+$ ng generate component  sidebar
 $ ng g c posts
 $ ng g c users
 $ ng g c details
@@ -352,10 +387,52 @@ $ ng g c details
 Now, you should have a total of 5 components, 4 of which we just created ourselves. 
 Shortly, you'll see how all of these start to work with each other and in relation to the app.
 
-Angular 6 Templating
-Let's say for instance that we want our particular app to have a sidebar with some icons. This sidebar will always be present in the app. The sidebar component is something we already generated with the CLI.
 
-Open the src/app/app.component.html file. You will see all of the boilerplate HTML the CLI generated, and consequently, what you see in the browser for the time being. Remove all of that and paste this (or better yet, type it!):
+----[ /ng6-proj/src/app/app.module.ts ]------------------------------------------------------------------------------------------
+
+import { BrowserModule } from '@angular/platform-browser';
+import { NgModule } from '@angular/core';
+
+import { AppRoutingModule } from './app-routing.module';
+import { AppComponent } from './app.component';
+import { SidebarComponent } from './sidebar/sidebar.component';
+import { PostsComponent } from './posts/posts.component';
+import { UsersComponent } from './users/users.component';
+import { DetailsComponent } from './details/details.component';
+
+import { HttpClientModule } from '@angular/common/http';
+
+@NgModule({
+  declarations: [
+    AppComponent,
+    SidebarComponent,
+    PostsComponent,
+    UsersComponent,
+    DetailsComponent
+  ],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    HttpClientModule,
+  ],
+  providers: [],
+  bootstrap: [AppComponent]
+})
+export class AppModule { }
+----------------------------------------------------------------------------------------------
+
+Angular 6 Templating
+
+Let's say for instance that we want our particular app to have a sidebar with some icons.
+This sidebar will always be present in the app. 
+The sidebar component is something we already generated with the CLI.
+
+Open the "/ng6-proj/src/app/app.component.html" file. 
+You will see all of the boilerplate HTML the CLI generated, and consequently, 
+what you see in the browser for the time being. 
+Remove all of that and paste this (or better yet, type it!):
+
+----[ /ng6-proj/src/app/app.component.html ]------------------------------------------------------------------------------------------
 
 <div id="container">
   <app-sidebar></app-sidebar>
@@ -364,9 +441,40 @@ Open the src/app/app.component.html file. You will see all of the boilerplate HT
     <router-outlet></router-outlet>
   </div>
 </div>
-We've wrapped everything in a container id. Then, you will notice a custom HTML element called app-sidebar. What's that?
+----------------------------------------------------------------------------------------------
 
-Well, when the CLI generated the sidebar component, it made the component's selector value app-sidebar. Don't believe me? Check out /src/app/sidebar/sidebar.component.ts -- It's right there in the component decorator! That's how you embed a component inside of another component. Now, anything defined in that component's HTML, will be displayed where <app-sidebar></app-sidebar> is defined.
+
+We've wrapped everything in a container id. 
+Then, you will notice a custom HTML element called app-sidebar. 
+What's that?
+
+Well, when the CLI generated the sidebar component, it made the component's selector value app-sidebar. 
+Don't believe me? 
+Check out "/ng6-proj/src/app/sidebar/sidebar.component.ts" 
+-- It's right there in the component decorator! 
+That's how you embed a component inside of another component. 
+Now, anything defined in that component's HTML, will be displayed where 
+<app-sidebar></app-sidebar> is defined.
+
+----[ /ng6-proj/src/app/sidebar/sidebar.component.ts ]------------------------------------------------------------------------------------------
+
+import { Component, OnInit } from '@angular/core';
+
+@Component({
+  selector: 'app-sidebar',
+  templateUrl: './sidebar.component.html',
+  styleUrls: ['./sidebar.component.scss']
+})
+export class SidebarComponent implements OnInit {
+
+  constructor() { }
+
+  ngOnInit() {
+  }
+
+}
+----------------------------------------------------------------------------------------------
+
 
 Another very important element is the router-outlet. This was added by the CLI when we added the --routing flag (it also generated a routing file in /src/app.
 
