@@ -476,11 +476,14 @@ export class SidebarComponent implements OnInit {
 ----------------------------------------------------------------------------------------------
 
 
-Another very important element is the router-outlet. This was added by the CLI when we added the --routing flag (it also generated a routing file in /src/app.
+Another very important element is the router-outlet. 
+This was added by the CLI when we added the "--routing" flag (it also generated a routing file in "/src/app".
 
 This element defines where any components defined by their routes will be displayed.
 
-Let's head over to the /src/app/sidebar/sidebar.component.html file to define the sidebar templating:
+Let's head over to the "/ng6-proj/src/app/sidebar/sidebar.component.html" file to define the sidebar templating:
+
+----[ /ng6-proj/src/app/sidebar/sidebar.component.html ]------------------------------------------------------------------------------------------
 
 <nav>
   <ul>
@@ -496,17 +499,52 @@ Let's head over to the /src/app/sidebar/sidebar.component.html file to define th
       </li>
   </ul>
 </nav>
-You will notice routerLink= here. Instead of href, we use routerLink to direct the user to different routes. Right now, this will not work though, we'll get to that during the routing section.
+----------------------------------------------------------------------------------------------
+
+You will notice "routerLink=" here. 
+Instead of href, we use routerLink to direct the user to different routes. 
+Right now, this will not work though, we'll get to that during the routing section.
 
 We're also going to use Material Icons, so we need to import that first. 
 
-Save this file and open up /src/index.html and add the following 2 lines between the <head> tags:
+Save this file and open up "/ng6-proj/src/index.html" and add the following 2 lines between the <head> tags:
 
-<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet">
+----[ /ng6-proj/src/app/sidebar/sidebar.component.html ]------------------------------------------------------------------------------------------
+
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
 <link href="https://fonts.googleapis.com/css?family=Montserrat:300,700" rel="stylesheet">
+
+----------------------------------------------------------------------------------------------
+
+
+----[ /ng6-proj/src/app/sidebar/sidebar.component.html ]------------------------------------------------------------------------------------------
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Ng6Tz1-Test-1</title>
+  <base href="/">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:300,700" rel="stylesheet">
+
+  <!-- link: "https://material.io/" --tools--icons-- https://material.io/tools/icons/?style=baseline
+  filter by name = ""  example "message" -->
+
+</head>
+<body>
+  <app-root></app-root>
+</body>
+</html>
+----------------------------------------------------------------------------------------------
+
 We're importing material icons first, and then a Google web font called Montserrat.
+
 
 Angular 6 CSS
 Let's add some CSS rulesets to make our app look better. First, open up /src/styles.css. Any CSS/Sass defined here will apply to the HTML templating of all components, while component-specific CSS files only apply to that component's HTML template.
