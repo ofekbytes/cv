@@ -379,10 +379,35 @@ export class AppModule { }
 - Let's generate a few more components. 
   Run the following commands to generate 3 more components:
 
-$ ng generate component  sidebar
+
+$ ng generate component sidebar
+CREATE /ng6-proj/src/app/sidebar/sidebar.component.html (26 bytes)
+CREATE /ng6-proj/src/app/sidebar/sidebar.component.spec.ts (635 bytes)
+CREATE /ng6-proj/src/app/sidebar/sidebar.component.ts (274 bytes)
+CREATE /ng6-proj/src/app/sidebar/sidebar.component.scss (0 bytes)
+UPDATE /ng6-proj/src/app/app.module.ts (479 bytes)
+
 $ ng g c posts
+CREATE /ng6-proj/src/app/posts/posts.component.html (26 bytes)
+CREATE /ng6-proj/src/app/posts/posts.component.spec.ts (635 bytes)
+CREATE /ng6-proj/src/app/posts/posts.component.ts (274 bytes)
+CREATE /ng6-proj/src/app/posts/posts.component.scss (0 bytes)
+UPDATE /ng6-proj/src/app/app.module.ts (479 bytes)
+
 $ ng g c users
+CREATE /ng6-proj/src/app/users/users.component.html (26 bytes)
+CREATE /ng6-proj/src/app/users/users.component.spec.ts (635 bytes)
+CREATE /ng6-proj/src/app/users/users.component.ts (274 bytes)
+CREATE /ng6-proj/src/app/users/users.component.scss (0 bytes)
+UPDATE /ng6-proj/src/app/app.module.ts (479 bytes)
+
 $ ng g c details
+CREATE /ng6-proj/src/app/details/details.component.html (26 bytes)
+CREATE /ng6-proj/src/app/details/details.component.spec.ts (635 bytes)
+CREATE /ng6-proj/src/app/details/details.component.ts (274 bytes)
+CREATE /ng6-proj/src/app/details/details.component.scss (0 bytes)
+UPDATE /ng6-proj/src/app/app.module.ts (479 bytes)
+
 
 Now, you should have a total of 5 components, 4 of which we just created ourselves. 
 Shortly, you'll see how all of these start to work with each other and in relation to the app.
@@ -449,8 +474,13 @@ Then, you will notice a custom HTML element called app-sidebar.
 What's that?
 
 Well, when the CLI generated the sidebar component, it made the component's selector value app-sidebar. 
+example: 
+@Component({selector: 'app-sidebar',
+
 Don't believe me? 
+
 Check out "/ng6-proj/src/app/sidebar/sidebar.component.ts" 
+
 -- It's right there in the component decorator! 
 That's how you embed a component inside of another component. 
 Now, anything defined in that component's HTML, will be displayed where 
@@ -476,7 +506,7 @@ export class SidebarComponent implements OnInit {
 ----------------------------------------------------------------------------------------------
 
 
-Another very important element is the router-outlet. 
+Another very important element is the "router-outlet". 
 This was added by the CLI when we added the "--routing" flag (it also generated a routing file in "/src/app".
 
 This element defines where any components defined by their routes will be displayed.
@@ -493,16 +523,16 @@ Let's head over to the "/ng6-proj/src/app/sidebar/sidebar.component.html" file t
       </a>
     </li>
     <li>
-        <a routerLink="posts">
-          <i class="material-icons">message</i>
-        </a>
-      </li>
+      <a routerLink="posts">
+        <i class="material-icons">message</i>
+      </a>
+    </li>
   </ul>
 </nav>
 ----------------------------------------------------------------------------------------------
 
 You will notice "routerLink=" here. 
-Instead of href, we use routerLink to direct the user to different routes. 
+Instead of "href", we use "routerLink" to direct the user to different routes. 
 Right now, this will not work though, we'll get to that during the routing section.
 
 We're also going to use Material Icons, so we need to import that first. 
@@ -547,9 +577,16 @@ We're importing material icons first, and then a Google web font called Montserr
 
 
 Angular 6 CSS
-Let's add some CSS rulesets to make our app look better. First, open up /src/styles.css. Any CSS/Sass defined here will apply to the HTML templating of all components, while component-specific CSS files only apply to that component's HTML template.
+Let's add some CSS rulesets to make our app look better. 
+First, open up "/ng6-proj/src/src/styles.css". 
+Any CSS/Sass defined here will apply to the HTML templating of all components, 
+while component-specific CSS files only apply to that component's HTML template.
 
 Add the following rulesets:
+
+
+----[ /ng6-proj/src/src/styles.css ]------------------------------------------------------------------------------------------
+
 
 /* You can add global styles to this file, and also import other style files */
 body {
@@ -561,9 +598,10 @@ body {
 
 #container {
     display: grid;
-    grid-template-columns: 70px auto;
+    grid-template-columns: 70px auto;  /* first side 70px , second side  auto size */
     height: 100%;
 
+    /** scss stuff **/
     #content {
         padding: 30px 50px;
 
@@ -600,9 +638,16 @@ body {
         }
     }
 }
-This is a little lengthy because I don't want to keep revisiting this file. The rulesets here are applying to some elements that we haven't yet defined. Nothing too exciting is happening here though, just some standard Sass/CSS.
+----------------------------------------------------------------------------------------------
 
-Next, open up the sidebar CSS file /src/app/sidebar/sidebar.component.scss:
+This is a little lengthy because I don't want to keep revisiting this file. 
+The rulesets here are applying to some elements that we haven't yet defined. 
+Nothing too exciting is happening here though, just some standard Sass/CSS.
+
+Next, open up the sidebar CSS file "/ng6-proj/src/app/sidebar/sidebar.component.scss":
+
+
+----[ /ng6-proj/src/app/sidebar/sidebar.component.scss ]------------------------------------------------------------------------------------------
 
 nav {
     background: #2D2E2E;
@@ -628,14 +673,19 @@ nav {
     }
     
 }
+----------------------------------------------------------------------------------------------
+
 Great. View your browser and the result should look like this:
 
 
 
-Angular 6 Routing Tutorial
-Now, let's make our 2 icons work when they're clicked. In order to do that, we need to visit the /src/app/app-routing.module.ts file.
+Angular 6 "Routing" Tutorial
+Now, let's make our 2 icons work when they're clicked. 
+In order to do that, we need to visit the  "/ng6-proj/src/app/app-routing.module.ts" file.
 
 This is what it looks like:
+
+----[ /ng6-proj/src/app/app-routing.module.ts ]------------------------------------------------------------------------------------------
 
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
@@ -647,9 +697,13 @@ const routes: Routes = [];
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
-We need to import our components at the top, and add them to the Routes array shown on line 4 above.
+----------------------------------------------------------------------------------------------
 
+We need to import our components at the top, and add them to the Routes array shown on line 4 above.
+(add components ==>> "UsersComponent", "DetailsComponent", "PostsComponent" )
 To do that, add the following:
+
+----[ /ng6-proj/src/app/app-routing.module.ts ]------------------------------------------------------------------------------------------
 
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
@@ -671,16 +725,24 @@ const routes: Routes = [
     component: PostsComponent
   },
 ];
+----------------------------------------------------------------------------------------------
+
 We've imported our 3 components, and then defined three objects in the Routes array.
 
-The first object specifies that the UsersComponent will be the default component that loads on the root path. We leave the path value empty forthis.
+The first object specifies that the "UsersComponent" will be the default component that loads on the root path.
+We leave the path value empty forthis.
 
-The next route is for a user details section. We've specified a wildcard named id. We'll use this to fetch that value from the router in order to retrieve the correct user details.
+The next route is for a "user" details section. 
+We've specified a wildcard named id. 
+We'll use this to fetch that value from the router in order to retrieve the correct user details.
 
 Then another route for a component and path called posts.
 
 Save this file, and the browser should now show:
 
+"UsersComponent" ==> default component that loads on the root path 
+"DetailsComponent" ==> "details/:id" ==> wildcard named "id"
+"PostsComponent" ==> "posts" component
 
 
 Awesome!
