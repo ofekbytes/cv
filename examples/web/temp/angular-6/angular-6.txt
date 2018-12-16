@@ -749,6 +749,8 @@ component: UsersComponent
 
 Awesome!
 
+***here***
+
 Angular 6 Services
 
 For our users component, we want to fetch a list of users from a public API. 
