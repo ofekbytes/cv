@@ -740,15 +740,19 @@ Then another route for a component and path called posts.
 
 Save this file, and the browser should now show:
 
+path: '',   ///defualt path (like "root" path)
+component: UsersComponent
+
 "UsersComponent" ==> default component that loads on the root path 
 "DetailsComponent" ==> "details/:id" ==> wildcard named "id"
 "PostsComponent" ==> "posts" component
 
-
 Awesome!
 
 Angular 6 Services
-For our users component, we want to fetch a list of users from a public API. To do that, we're going to use the Angular CLI to generate a service for us. 
+
+For our users component, we want to fetch a list of users from a public API. 
+To do that, we're going to use the Angular CLI to generate a service for us. 
 
 An Angular 6 service is useful placing code that's reusable throughout your app's different components.
 
