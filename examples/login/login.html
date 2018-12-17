@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+
+	<!-- css -->
+    <link rel="stylesheet" href="./login.css">
+	<link href="http://ilapps06:8080/ldapad/assets/css/bootstrap.min.css" rel="stylesheet"> 
+	
+	<!-- js -->
+	<script src="http://ilapps06:8080/ldapad/assets/js/jquery.min.js"></script>
+    <script src="./login.js"></script>
+ 
+  </head>
+  <body>
+      <div class="container">
+          <div class="card card-container">
+             
+              <img id="profile-img" class="profile-img-card" src="./avatar.png" />
+              <p id="profile-name" class="profile-name-card"></p>
+              
+<!-- temp code -->
+<!-- <form class="form-signin" action="http://localhost:8080/login" method="post">  --> <!-- http://ilapps06:8080/ldapad/login -->
+               
+            <!-- <form class="form-signin"> -->
+                  <!-- <span id="reauth-email" class="reauth-email"></span> -->
+                  <input type="text" id="inputUser" class="form-control" placeholder="user" value="" required autofocus>
+                  <input type="password" id="inputPassword" class="form-control" placeholder="Password" value="" required>
+                   				
+                  <button id="submit" class="btn btn-lg btn-primary btn-block btn-signin" type="submit">Sign in</button>
+                  <div>&nbsp;</div>
+                  <div id="FormOutput"><u>&nbsp;&nbsp;&nbsp;&nbsp;</u></div>
+
+            <!-- </form> -->
+          </div>
+      </div>
+      
+  </body>
+</html>

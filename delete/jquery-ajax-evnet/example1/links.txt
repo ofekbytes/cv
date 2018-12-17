@@ -1,0 +1,15 @@
+// jQuery Tutorial for Beginners //
+https://www.youtube.com/watch?v=hMxGhHNOkCU&list=PL5Tw98-9k5IYSsWsCvgr7bGq-j-q7Hzwn&index=2
+
+// Event Binding - jQuery Tutorial for Beginners //
+https://www.youtube.com/watch?v=G-POtu9J-m4
+
+// Writing Smarter, Better Code - jQuery Tutorial for Beginners //
+https://www.youtube.com/watch?v=Cc3K2jDdKTo
+
+// DOM Traversal with jQuery //
+https://www.youtube.com/watch?v=LYKRkHSLE2E
+
+// Building a jQuery Tab Panel Widget //
+https://www.youtube.com/watch?v=1nWrIBB_bMA
+

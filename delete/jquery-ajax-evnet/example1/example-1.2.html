@@ -1,0 +1,102 @@
+<!--  index.html  -->
+<!DOCTYPE html>
+<html>
+<head>
+
+
+<!--  css -->
+<link rel="stylesheet" href="http://ilapps06:8080/cdn/css/bootstrap.min.css">
+
+<!-- JavaScript -->
+<script src="http://ilapps06:8080/cdn/jquery-3.3.1/jquery-3.3.1.min.js"></script> 
+<script src="http://ilapps06:8080/cdn/bootstrap-sass-3.3.7/assets/javascripts/bootstrap.min.js"></script>
+
+  
+<meta charset=utf-8 />
+<title>example-1.2.html</title>
+
+<style>
+</style>
+
+</head>
+<body>
+<div class="container-fluid">
+	<div id="row1" class="row">
+		<div class="col-md-12" align='center'>
+				<div class="col-md-12">
+					<div class="alert alert-dismissable alert-warning">
+						 
+						<button type="button" class="close" data-dismiss="alert" aria-hidden="true">
+						</button>
+						<h1>
+							::: Welcome :::
+                        </h1>
+                        <h6 id="row111">[X] </h6>
+					</div>
+				</div>
+		</div>
+	</div> 
+</div>
+
+<button id='btn1' name='nbtn1'>name</button>
+
+<script>      
+
+        // document.ready // long writing //
+        // $(document).ready(function() { //code });
+
+        // document.ready // in short writing //
+        // $(function()  { //code }) ;
+
+        $( function () 
+        { 
+            var i=0;
+            $('#row1').fadeOut(0).fadeIn(400);
+            $('#btn1').html('click-me'); //change button text
+           // $('#row1').html('change all'); //change all panel
+
+           $('#btn1').on('click',function()
+           {
+               i++;
+
+               console.log('btn1.clicked');
+               $('#row1').slideToggle();
+               $('#row1 #row111').html('click event x ' + i + ' time/s'); 
+           });
+
+        // click
+        //    $('#row1').on('click',function()
+        //    {
+        //        console.log('btn1.clicked');
+        //        $('#row1').slideToggle();
+        //    });
+
+        // click
+        //    $('#row111').on('click',function()
+        //    {
+        //        console.log('btn1.clicked');
+        //        $('#row1').slideToggle();
+        //    });        
+        
+        //mouseover
+        // $('#row111').on('mouseover',function()
+        //    {
+        //        console.log('btn1.clicked');
+        //        $('#row1').slideToggle();
+        //    });        
+
+
+        $('#row111').on('mouseover',function()
+           {
+               console.log('btn1.clicked');
+               $('#row1').slideToggle();
+           });        
+
+
+         }); //ready
+    </script>
+
+</body>
+
+</html>
+

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html id="htmlid">
+<head>
+ <!-- <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>   -->
+
+<!--  css -->
+
+<link href="http://ilapps06:8080/ldapad/assets/css/bootstrap.min.css" rel="stylesheet"> 
+<!-- <link href="index.css" rel="stylesheet" type="text/css">  -->
+<!-- <link href="http://ilapps06:8080/ldapad/assets/css/style.css" rel="stylesheet">  -->
+
+
+<!-- JavaScript -->
+<!-- <script src="index.js"></script> -->
+<script src="http://ilapps06:8080/ldapad/assets/js/jquery.min.js"></script>
+<!-- <script src="http://ilapps06:8080/ldapad/assets/js/bootstrap.min.js"></script>	   -->
+<!-- <script src="../assets/js/scripts.js"></script> -->
+<script src="./temp.js"></script>
+
+
+<meta charset=utf-8 />
+<title>template</title>
+</head>
+
+<body onload="fnLoginPage()">
+
+<div class="container-fluid">
+	<div class="row">
+		<!-- <div class="col-md-12"> -->
+				<div class="col-md-6">
+					<div class="alert alert-dismissable alert-warning">
+						 
+						<!-- <button type="button" class="close" data-dismiss="alert" aria-hidden="true">
+						</button> -->
+						<h1>
+							::: test :::
+						</h1>
+					
+						<h4><strong>::: web service request list ...</strong> post a request and get the data you need ::: </h4>
+
+					</div>
+				</div>
+				<div class="col-md-6">
+					<div class="alert alert-dismissable alert-warning">
+						 
+						<!-- <button type="button" class="close" data-dismiss="alert" aria-hidden="true">
+						</button> -->
+						<h1>
+							::: test :::
+						</h1>
+						
+						<h4><strong>::: web service request list ...</strong> post a request and get the data you need ::: </h4>
+
+					</div>
+				</div>				
+		<!-- </div> -->
+	</div>
+</div>
+
+<script>
+
+	
+
+function fnLoginPage()
+{
+	$(document).ready(function () 
+	{				
+		var glTragetUrl = "";
+		console.log ("onloadTest is now active");
+		// $.post("http://ilapps06:8080/ldapad/login",  
+		$.post("http://localhost:8080/login",  
+		{
+			glTragetUrl: String('http://localhost:8080')
+			//glUrlTarget = "http://localhost:8080";			
+			//	window.location.replace("'" + glUrlTarget +"'")
+		}
+		,
+		function(data, status)
+		{
+			//gData =  data;
+
+			//window.location.replace("'" + glUrlTarget +"'");
+			document.getElementById("htmlid").innerHTML =  data;	
+
+   			//document.getElementById("mpTableData").innerHTML = gData;    
+         	//document.getElementById("output").innerHTML = ""; // //print table element to console//
+
+		//	console.log(data);
+			//console.log(" gData === " + gData + " data === " + data);
+			
+		});
+	});
+}
+
+
+/****
+test
+****/
+function fnLogin()
+{
+	$(document).ready(function () 
+	{				
+		var glTragetUrl = "";
+		console.log ("onloadTest is now active");
+		$.post("http://ilapps06:8080/ldapad/login-validation",  
+		{
+			glUser: String('kesslery'),
+			glPassword: String ('6Yhnmju7')
+
+			//glUrlTarget = "http://localhost:8080";
+			
+		//	window.location.replace("'" + glUrlTarget +"'")
+		}
+		,
+		function(data, status)
+		{
+			gData =  data;
+
+			//window.location.replace("'" + glUrlTarget +"'");
+			//document.getElementsByTagName("body").innerHTML =  gData;	
+			console.log(" gData ===  " + gData + " data === " + data);
+			
+		});
+	});
+
+	console.log("page is note ready")
+
+}	
+
+</script>
+
+
+
+</body>
+</html>
