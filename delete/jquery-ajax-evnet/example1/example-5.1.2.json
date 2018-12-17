@@ -1,0 +1,15 @@
+{
+    "drinks": [
+    {
+        "id": "1",
+        "name": "shalom",
+        "drink": "milk"
+    },
+    {
+        "id": "2",
+        "name": "yifat",
+        "drink" : "beer"
+    }
+]
+}
+
