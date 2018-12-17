@@ -1,0 +1,85 @@
+
+<!-- http://rest.learncode.academy/ -->
+
+
+Learning to REST
+
+The free practice RESTful API brought to you by LearnCode.academy...oh snap
+
+How it works
+
+Pick any username and collection name. - 
+If they don't exist, they'll be created for you. 
+It's like you have a virtual backend engineer fulfilling your every wish. 
+For this example, the username will be "learncode" and the collection will be "friends".
+
+Get any collection: by making type=GET requests to 
+"http://rest.learncode.academy/api/:user/:collection", 
+or in our case, 
+"http://rest.learncode.academy/api/learncode/friends"
+
+Get a specific item: by adding an id 
+"http://rest.learncode.academy/api/learncode/friends/5ab288d22bfd57010088a9e6"
+
+Add a new item:
+
+by making a "type=POST" request
+with the header "Content-Type: application/json"
+and a JSON body "{name: 'Superman', age: 29}"
+to your collection: "http://rest.learncode.academy/api/learncode/friends"
+
+What's the catch? 
+1) Data only lasts for 2 days, then an item expires. 
+2) If other users guess your "username", they can change your stuff...this ain't for your production app, baby.
+
+
+What should my Javascript code look like?
+
+Let's use the fancy new JS Fetch API!
+(if you need to support all browsers, make sure to use the Fetch polyfill on your page)
+Get a collection: GET /api/:user/:collection
+(Choose any username except learncode and collection name you like)
+
+  fetch('http://rest.learncode.academy/api/johnbob/friends')
+    .then(response => response.json()) // response.json() returns a promise
+    .then((response) => {
+      console.log("I have friends!", response); //returns all of johnbob's friends
+    })
+Add a new item: POST /api/:user/:collection
+(Collection is created when you post your first item)
+
+  fetch('http://rest.learncode.academy/api/johnbob/friends', {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({name: "Superman", age: 36}),
+    })
+    .then(response => response.json()) // response.json() returns a promise
+    .then((response) => {
+      console.log("You saved this item", response); //returns the new item along with its ID
+    })
+Get a single item: GET /api/:user/:collection/:id (you'll need to update the code below to a real ID)
+  fetch('http://rest.learncode.academy/api/johnbob/friends/5ac29306272a180100ebc760')
+    .then(response => response.json()) // response.json() returns a promise
+    .then((response) => {
+      console.log("I got a friend!", response); //returns all of johnbob's friends
+    })
+Update an item with new data: PUT /api/:user/:collection/:id (you'll need to update the code below to a real ID)
+  fetch('http://rest.learncode.academy/api/johnbob/friends/5ac29306272a180100ebc760', {
+      method: "PUT",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({name: "Batman", age: 36}),
+    })
+    .then((response) => {
+      console.log("Update success!", response.status); //returns 200 ok
+    })
+Delete an item: DELETE /api/:user/:collection/:id (you'll need to update the code below to a real ID)
+  fetch('http://rest.learncode.academy/api/johnbob/friends/5ac29306272a180100ebc760', {
+      method: "DELETE",
+    })
+    .then((response) => {
+      console.log("Deleted!", response.status); //returns 200 ok
+    })

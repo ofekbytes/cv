@@ -1,5 +1,8 @@
+
+// JQUERY //
+
 // jQuery Tutorial for Beginners //
-https://www.youtube.com/watch?v=hMxGhHNOkCU&list=PL5Tw98-9k5IYSsWsCvgr7bGq-j-q7Hzwn&index=2
+https://www.youtube.com/watch?v=hMxGhHNOkCU
 
 // Event Binding - jQuery Tutorial for Beginners //
 https://www.youtube.com/watch?v=G-POtu9J-m4
@@ -12,4 +15,19 @@ https://www.youtube.com/watch?v=LYKRkHSLE2E
 
 // Building a jQuery Tab Panel Widget //
 https://www.youtube.com/watch?v=1nWrIBB_bMA
+
+// Building a jQuery Image Slider //
+https://www.youtube.com/watch?v=KkzVFB3Ba_o
+
+
+
+
+// JQUERY - AJAX //
+https://www.youtube.com/watch?v=fEYx8dQr_cQ&index=7&list=PLoYCgNOIyGABdI2V8I_SWo22tFpgh2s6_
+
+https://www.youtube.com/watch?v=5nL7X1UMWsc&index=8&list=PLoYCgNOIyGABdI2V8I_SWo22tFpgh2s6_
+
+https://www.youtube.com/watch?v=GbNWPn8vodo&index=9&list=PLoYCgNOIyGABdI2V8I_SWo22tFpgh2s6_
+
+https://www.youtube.com/watch?v=Y6KrUwmlrNE&index=10&list=PLoYCgNOIyGABdI2V8I_SWo22tFpgh2s6_
 
