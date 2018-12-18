@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<!--  css -->
+<link rel="stylesheet" href="../../../assets/bootstrap-4.1.2-dist/css/bootstrap.min.css">
+
+<!-- JavaScript -->
+<script src="../../../assets/jquery-3.3.1/jquery-3.3.1.min.js"></script> 
+<script src="../../../assets/bootstrap-4.1.2-dist/js/bootstrap.min.js"></script>
+
+
+  
+<meta charset=utf-8 />
+<title>example-6.2.html</title>
+
+<style>
+	p{
+		padding-left: 15px;
+		color: blue;
+	}
+
+	h1{
+		color:red;
+	}
+</style>
+
+</head>
+<body>
+
+	<h1><u> Drink order</u></h1>
+
+<!--Static-->
+<!-- <ul id='orders'> -->
+<!-- <li>Name: shalom, Drink:milk</li>  -->
+<!-- <li>Name: yifat, Drink: beer</li> -->
+<!-- </ul> -->
+
+	<ul id='orders'></ul>
+
+	<p>
+		<a4> *** Add a Drink *** </a4>
+		<p>Name: <input type='text' id='name'> </p>
+		<p>Drink: <input type='drink' id='drink'> </p>
+		<button id='add-order'> Add </button>
+	</p>
+
+	<p id='msg'></p>
+	
+<script>      
+
+	$(function()
+	{
+
+		//dom pointer - cach the dom that will look at it once.
+		var $orders = $('#orders');
+		var $msg = $('#msg');
+
+		//jquery - ajax
+		$.ajax({
+			
+			type: 'GET',
+			//url: '/api/order'
+			url: './_drinks1.json',
+			success: function(orders) 
+			{			
+				console.log('success ' + orders + ' orders is data array') ;
+
+				$.each(orders, function(i, order) //i=index (0-N) //order is the data
+				{
+					//$orders.append('<li> order test </li>');
+					$orders.append('<li>::[' + order.id + ']:: Name: ' + order.name  +  ' , Drink: ' + order.drink + '</li>');
+				});
+			},
+			error: function(data)
+			{
+				//alert("Error Loading orders");
+				$msg.append('<span>::: Error ::: <u>Error Loading orders</u></span>');
+			}
+			
+		});
+
+
+
+	}); //ready
+
+</script>
+
+</body>
+
+</html>
+

@@ -1,0 +1,19 @@
+
+API - 
+
+Add order
+POST request to /api/orders
+
+Sample Post:
+{
+    name: 'shalom',
+    drink: 'milk',
+}
+
+Sample Response:
+{
+    id: 3,
+    name: 'shimon',
+    drink: 'water',
+}
+

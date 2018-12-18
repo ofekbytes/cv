@@ -1,3 +1,9 @@
+
+API - 
+
+Get order
+GET request to /api/orders
+sample response:
 [
     {
         id: 1,
