@@ -1,4 +1,4 @@
-
+﻿
 ----[YARON KESSLER CV (RESUME)]----
 
 Address: ISRAEL, HOLON
@@ -18,7 +18,7 @@ task-oriented and with a high level of self-learning - technological and organiz
 - Programmer in a banking / financial company - Build END-TO-END style programs such as:
 -- java client-server (java, swing/awt, jdbc, ms-sql, json ...).
 -- web-client – creating a Responsive web pages using html, css, bootstrap, javascript,  jquery, (within ms-iis server)
--- web-Server - developing in Java spring-boots and compiling code to "war" file.
+-- web-Server - developing in Java spring-boots (Rest) and compiling code to "war" file.
                 the "war" file will be deployed in apache tomcat server.
 
 
