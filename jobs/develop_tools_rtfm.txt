@@ -73,11 +73,22 @@ Example graph produced by Munin showing memory usage
 Munin is a free and open-source computer system monitoring, network monitoring and infrastructure monitoring software application.
 
 
-Airflow - 
+Airflow - Apache AirFlow - 
+Apache airflow is a platform for programmatically author schedule and monitor workflows.
+
+https://www.quora.com/What-is-Apache-AirFlow 
+https://airflow.apache.org/
+https://airflow.apache.org/project.html
+https://airflow.incubator.apache.org/index.html
+https://towardsdatascience.com/getting-started-with-apache-airflow-df1aa77d7b1b
+https://airflow.readthedocs.io/en/latest/index.html
+
+https://github.com/apache/incubator-airflow
 
 
-
-Redis
+Redis - Redis (Remote Dictionary Server) - 
+is an open-source in-memory data structure project implementing a distributed, in-memory key-value database with optional durability.
+https://en.wikipedia.org/wiki/Redis
 
 <<< automation top >>>
 
