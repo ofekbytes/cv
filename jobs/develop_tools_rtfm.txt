@@ -100,4 +100,28 @@ Selenium, TestNG, Cucumber, SoapUI, REST-Assured, PyTest, etc....
 [automation CI/CD concepts and tools]
 Jenkins, Puppet, Chef, etc....
 
+[ web ]
+jQuery, Ajax
+MVC \ Angular
+RabbitMQ
+
+C#
+https://en.wikipedia.org/wiki/C_Sharp_(programming_language)
+
+F#
+https://fsharp.org/
+https://en.wikipedia.org/wiki/F_Sharp_(programming_language)
+
+NServiceBus
+
+WCF
+
+Rest
+
+WindowsServices
+
+TypeScript
+
+NativeScript
+
 

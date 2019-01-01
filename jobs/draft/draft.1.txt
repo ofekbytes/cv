@@ -1,0 +1,99 @@
+
+RYB Technologies
+Full Stack C# Developer
+
+Company provides boutique software services in the FinTech sector. Our team of 20+ talented employees located throughout Israel enjoy unparalleled flexibility in their work which we believe produces higher quality software.
+
+We are hiring Full Stack Developers focused on developing robust Enterprise Systems.
+
+This is a remote/work from home position in Israel. 
+
+
+
+Requirements:
+
+At least 3 years of software development experience building enterprise applications.
+•Familiar with multiple development frameworks.
+
+
+•Experience with Agile/Scrum.
+
+
+•Experience with leading edge development tools.
+
+
+•Experience with:
+
+
+?C#
+
+
+?SourceControl/Git
+
+
+?OOD 
+
+
+?SOA
+
+
+?Multi-Threading
+
+
+?Entity Framework\NHibernate
+
+
+?SQL
+
+
+?Web API
+
+
+?jQuery
+
+
+?MVC\Angular
+
+
+?Ajax
+
+
+•Solid organizational skills.
+
+
+•High level of English (both written and spoken). 
+Conversational level of Hebrew
+Job Requirements:
+Bonus skills to have:
+•RabbitMQ
+
+
+•F#
+
+
+•NServiceBus
+
+
+•Kafka
+
+
+•Docker 
+
+
+•WCF
+
+
+•Rest
+
+
+•WindowsServices
+
+
+•TypeScript
+
+
+•NativeScript
+Required Experience:  3-4 שנים
+Locations:  מרכז, שרון, שפלה, ירושלים, צפון, דרום, יהודה ושומרון
+Sub Categories:  C#, Angular, מתכנת
+Job Scopes:  משרה מלאה
