@@ -1,0 +1,127 @@
+
+\* develop tools RTFM *\
+
+
+development languages
+
+Java - 
+https://en.wikipedia.org/wiki/Java_(programming_language)
+
+MySQL - 
+https://en.wikipedia.org/wiki/MySQL
+
+Spark - Apache Spark
+https://en.wikipedia.org/wiki/Apache_Spark
+
+Kafka - Apache Kafka
+https://en.wikipedia.org/wiki/Apache_Kafka
+
+Hadoop - Apache Hadoop
+https://en.wikipedia.org/wiki/Apache_Hadoop
+
+Cassandra - Apache Cassandra
+https://en.wikipedia.org/wiki/Apache_Cassandra
+
+Vertica - 
+https://en.wikipedia.org/wiki/Vertica
+
+HDFS - Hadoop Distributed File System (see: Apache Hadoop)
+https://wiki.apache.org/hadoop/HDFS
+
+BigQuery - RESTful web service 
+https://en.wikipedia.org/wiki/BigQuery
+
+Docker - 
+https://en.wikipedia.org/wiki/Docker_(software)
+
+
+Linux - 
+https://en.wikipedia.org/wiki/Linux
+
+
+Kubernetes - 
+https://en.wikipedia.org/wiki/Kubernetes
+
+Operating-system-level virtualization
+https://en.wikipedia.org/wiki/Operating-system-level_virtualization
+
+
+
+Nomad - Nomad Software is a relational database 
+https://en.wikipedia.org/wiki/Nomad_software
+
+
+-----
+Metrictank - Metrictank is a cassandra-backed, metrics2.0 based, multi-tenant timeseries database for Graphite and friends
+????????==== link
+------
+
+Grafana - 
+Grafana is an open-source, general purpose dashboard and graph composer, which runs as a web application. 
+It supports graphite, InfluxDB or opentsdb as backends.
+https://wiki.archlinux.org/index.php/Grafana
+https://grafana.com/
+
+
+Zabbix - 
+Zabbix is an open-source monitoring software tool for diverse IT components, including networks, servers, virtual machines (VMs) and cloud services. 
+https://en.wikipedia.org/wiki/Zabbix
+
+
+Munin -
+Example graph produced by Munin showing memory usage
+Munin is a free and open-source computer system monitoring, network monitoring and infrastructure monitoring software application.
+
+
+Airflow - Apache AirFlow - 
+Apache airflow is a platform for programmatically author schedule and monitor workflows.
+
+https://www.quora.com/What-is-Apache-AirFlow 
+https://airflow.apache.org/
+https://airflow.apache.org/project.html
+https://airflow.incubator.apache.org/index.html
+https://towardsdatascience.com/getting-started-with-apache-airflow-df1aa77d7b1b
+https://airflow.readthedocs.io/en/latest/index.html
+
+https://github.com/apache/incubator-airflow
+
+
+Redis - Redis (Remote Dictionary Server) - 
+is an open-source in-memory data structure project implementing a distributed, in-memory key-value database with optional durability.
+https://en.wikipedia.org/wiki/Redis
+
+<<< automation top >>>
+
+** developing automation in Java and Python.
+
+[automation tools and frameworks]
+Selenium, TestNG, Cucumber, SoapUI, REST-Assured, PyTest, etc....
+
+[automation CI/CD concepts and tools]
+Jenkins, Puppet, Chef, etc....
+
+[ web ]
+jQuery, Ajax
+MVC \ Angular
+RabbitMQ
+
+C#
+https://en.wikipedia.org/wiki/C_Sharp_(programming_language)
+
+F#
+https://fsharp.org/
+https://en.wikipedia.org/wiki/F_Sharp_(programming_language)
+
+NServiceBus
+
+WCF
+
+Rest
+
+WindowsServices
+
+TypeScript
+
+NativeScript
+
+
