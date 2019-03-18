@@ -1,11 +1,19 @@
 
 === siebel crm rtfm links ===
 
+https://www.oracle.com/applications/siebel/
+
+https://www.oracle.com/de/applications/siebel/
+
+https://www.oracle.com/ru/applications/siebel/
+
+https://www.oracle.com/partners/en/products/applications/siebel/overview/index.html
+
 https://www.youtube.com/watch?v=KyVzFSgXPhU&list=PLAbPnaB7GAW1u5Hqgw5hAb2RoqZU-C_tV
 
 https://www.youtube.com/user/oraclesiebelcx
 
-
+https://www.softwareadvice.com/crm/salesforce-vs-oracle-siebel/
 
 ????
 
