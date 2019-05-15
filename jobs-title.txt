@@ -1,6 +1,7 @@
  
- HDFS / HBase/ Map reduce / Pig‏
+
+HDFS / HBase/ Map reduce / Pig‏
 spark / pyspark‏
 nodejs , python‏
 
- Java, Groovy, GoLang, Python, C#, C++
+Java, Groovy, GoLang, Python, C#, C++

@@ -1,0 +1,30 @@
+
+[server side]
+Java / Scala 3+ years
+Experience building high-performance, large scale applications and data pipelines
+Linux: 3+ years
+Strong SW architecture understanding
+Fast and independent learner
+Big Data related experience (Kafka, Hadoop, Spark)
+Data Science, Machine Learning, Data Analysis, BI
+DevOps experience - Chef, Jenkins, Linux administration, Docker, Kubernetes, process automation, 
+security, networking, monitoring. 
+Open Source involvement
+Graph processing
+NoSQL: Cassandra, MongoDB, Couchbase
+ELK - Elastic Search, Kibana
+
+[client side]
+At least 5 years experience developing with JavaScript, CSS3, SASS ,HTML5, Flexbox
+Experience developing single-page applications with Angular / React
+Experience with Node.js
+Experience with RabbitMQ, Redis and Postgres DBs - an advantage
+cloud environment (AWS, Azure, etc.) 
+Experience in working in an Agile development organization (Scrum, Kanban)
+
+
+Superior communication skills
+Experience working on large & complex projects
+Experience working with continuous integration and continuous deployment pipeline
+5+ years of experience building highly-scalable, interactive web applications
+
