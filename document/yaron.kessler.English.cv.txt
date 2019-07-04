@@ -6,20 +6,22 @@ Email: yaron.kessler41@gmail.com
 
 
 [Essence]: 
+I am a Father, Husband, Friend, Developer.
 Knowledge, interest and experience in developing Full Stack, inquisitive, 
 task-oriented and with a high level of self-learning - technological and organizational.
-
+Programming style: OOP (Object-oriented programming), Design Patterns, MVC (Model-view-controller), MVW ...
 
 
 [Work Experience]:
 
 
-<2017-2018> - banking / financial company
+<2017-2019> - banking / financial company
 - Programmer in a banking / financial company - Build END-TO-END style programs such as:
--- java client-server (java, swing/awt, jdbc, ms-sql, json ...).
+-- java client-server (java desktop application: swing/awt, jdbc, ms-sql, json ...).
 -- web-client – creating a Responsive web pages using html, css, bootstrap, javascript,  jquery, (within ms-iis server)
 -- web-Server - developing in Java spring-boots (Rest) and compiling code to "war" file.
                 the "war" file will be deployed in apache tomcat server.
+-- Programming style - OOP (Object-oriented programming), Design Patterns, MVC (Model-view-controller), MVW ...
 
 
 <2015-2017> - ISRACARD Company.
@@ -96,4 +98,4 @@ Hebrew - mother tongue
 English - high level
 
 
-resume/cv updated : 08/11/2018
+resume/cv updated : 04/07/2019
